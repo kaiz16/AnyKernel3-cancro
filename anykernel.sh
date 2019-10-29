@@ -37,7 +37,7 @@ dump_boot;
 
 # init.rc
 backup_file init.rc;
-replace_string init.rc "import /init.safailnet.rc" after "import /init.environ.rc" "import /init.safailnet.rc";
+insert_line init.rc "import /init.safailnet.rc" after "import /init.environ.rc" "import /init.safailnet.rc";
 
 # end ramdisk changes
 
